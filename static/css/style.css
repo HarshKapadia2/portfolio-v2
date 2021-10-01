@@ -1,0 +1,94 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--text-color: #e0e0e0;
+	--bg-color: #000000;
+}
+
+body {
+	color: var(--text-color);
+	background-color: var(--bg-color);
+	font-family: "Montserrat", sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	height: 6vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: fixed;
+	background-color: var(--bg-color);
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0.5em 1em;
+}
+
+nav li {
+	padding: 0 1em;
+}
+
+a {
+	color: var(--main-color);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 4px;
+}
+
+main {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#main-col-wrapper {
+	width: 80vw;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1 {
+	font-size: 90px;
+	margin-bottom: 0.25em;
+}
+
+h2 {
+	font-size: 35px;
+	margin-bottom: 0.75em;
+}
+
+#socials {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+
+#socials img {
+	width: 2em !important;
+	margin: 0 0.5em;
+}
+
+#github-logo {
+	margin-left: 0 !important;
+}
+
+#main-col-2 img {
+	width: 22em;
+}
+
+#arrow {
+	position: absolute;
+	bottom: 2em;
+}
