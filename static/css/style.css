@@ -57,6 +57,8 @@ a {
 	text-underline-offset: 4px;
 }
 
+/* ============================================== HOME SECTION ================================================== */
+
 main {
 	height: 100vh;
 	display: flex;
@@ -101,14 +103,130 @@ h2 {
 	margin-left: 0 !important;
 }
 
-#icon {
+.icon {
 	width: 15em;
 	width: clamp(200px, 30vw, 350px);
+	margin: 1em 0;
 }
 
 #arrow {
 	position: absolute;
 	bottom: 2em;
+}
+
+/* ========================================= PROJECTS (+ TALKS AND OTC) SECTION ============================================= */
+
+section {
+	margin-bottom: 5em;
+	width: 90vw;
+}
+
+section h2 {
+	font-size: 30px;
+	font-size: clamp(25px, 5vw, 35px);
+}
+
+#project-cards-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 2em;
+	padding: 2em 0 5em 0;
+	align-items: center;
+}
+
+.project-card {
+	padding: 1em;
+	border: 1px solid var(--border-color);
+	border-radius: 5px;
+}
+
+.project-card img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 1em;
+	border-radius: 5px;
+}
+
+.project-card .iframe-wrapper {
+	position: relative;
+	padding-top: 56.25%;
+	margin-bottom: 1em;
+}
+
+.project-card iframe {
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.project-name {
+	margin-bottom: 1em;
+	font-weight: bold;
+	font-size: 20px;
+	font-size: clamp(18px, 2vw, 20px);
+}
+
+.project-descp,
+.project-links {
+	margin-bottom: 1em;
+	line-height: 1.4em;
+	font-size: 16px;
+	font-size: clamp(15px, 2vw, 17px);
+}
+
+.more-info-link {
+	padding: 1em;
+	border: 1px solid var(--border-color);
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.more-info-link:hover {
+	background-color: var(--border-color);
+}
+
+/* ============================================== INTERNSHIPS SECTION ======================================== */
+
+.internship-exp {
+	margin-bottom: 2em;
+}
+
+.internship-name {
+	margin-bottom: 0.75em;
+	font-weight: bold;
+	font-size: 20px;
+	font-size: clamp(18px, 2vw, 20px);
+}
+
+.internship-position {
+	margin-bottom: 0.25em;
+}
+
+.internship-duration {
+	margin-bottom: 0.5em;
+}
+
+.list-style-inside {
+	list-style-position: inside;
+	line-height: 1.4em;
+}
+
+/* ============================================== OTC AND ABOUT SECTIONS ======================================== */
+
+#otc p,
+#about p {
+	line-height: 1.4em;
+	margin-bottom: 1em;
+}
+
+/* ============================================== FOOTER ======================================== */
+
+footer {
+	margin: 2em 1em;
+	text-align: center;
 }
 
 /* ============================================== SCROLL BAR ======================================== */
@@ -141,10 +259,17 @@ body::-webkit-scrollbar-thumb:hover {
 		flex-direction: column-reverse;
 		align-items: flex-start;
 	}
+
 	#main-col-2 {
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 	}
 
+	#project-cards-wrapper {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+}
+
+@media screen and (max-width: 1120px) {
 	/* BURGER MENU */
 
 	.navbar-ul {
@@ -181,7 +306,7 @@ body::-webkit-scrollbar-thumb:hover {
 		display: flex;
 		justify-content: flex-end;
 		margin-left: 0;
-		padding: 0.25em 1.6em;
+		padding: 0.5em 0.5em 0.5em 2em;
 	}
 
 	.hide-burger-menu {
