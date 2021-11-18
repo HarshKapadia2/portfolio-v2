@@ -187,6 +187,13 @@ section h2 {
 	background-color: var(--border-color);
 }
 
+/* ============================================== OTC SECTION ======================================== */
+
+#otc p {
+	line-height: 1.4em;
+	margin-bottom: 1em;
+}
+
 /* ============================================== SCROLL BAR ======================================== */
 
 body::-webkit-scrollbar {
