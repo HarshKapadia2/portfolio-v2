@@ -72,12 +72,14 @@ main {
 }
 
 h1 {
-	font-size: 90px;
+	font-size: 60px;
+	font-size: clamp(50px, 10vw, 90px);
 	margin-bottom: 0.25em;
 }
 
 h2 {
-	font-size: 35px;
+	font-size: 30px;
+	font-size: clamp(20px, 5vw, 35px);
 	margin-bottom: 0.75em;
 }
 
@@ -88,7 +90,8 @@ h2 {
 }
 
 #socials img {
-	width: 2em !important;
+	width: 1.5em !important;
+	width: clamp(27px, 5vw, 40px) !important;
 	margin: 0 0.5em;
 }
 
@@ -96,8 +99,9 @@ h2 {
 	margin-left: 0 !important;
 }
 
-#main-col-2 img {
-	width: 22em;
+#icon {
+	width: 15em;
+	width: clamp(200px, 30vw, 350px);
 }
 
 #arrow {
@@ -122,4 +126,16 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
 	background-color: #757575;
+}
+
+/* ============================================== MEDIA QUERIES ============================================ */
+
+@media screen and (max-width: 920px) {
+	#main-col-wrapper {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+	#main-col-2 {
+		margin-bottom: 2em;
+	}
 }
