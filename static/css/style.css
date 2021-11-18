@@ -113,7 +113,7 @@ h2 {
 	bottom: 2em;
 }
 
-/* ========================================= PROJECT AND TALKS SECTION ============================================= */
+/* ========================================= PROJECTS (+ TALKS AND OTC) SECTION ============================================= */
 
 section {
 	margin-bottom: 5em;
@@ -185,6 +185,32 @@ section h2 {
 
 .more-info-link:hover {
 	background-color: var(--border-color);
+}
+
+/* ============================================== INTERNSHIPS SECTION ======================================== */
+
+.internship-exp {
+	margin-bottom: 2em;
+}
+
+.internship-name {
+	margin-bottom: 0.75em;
+	font-weight: bold;
+	font-size: 20px;
+	font-size: clamp(18px, 2vw, 20px);
+}
+
+.internship-position {
+	margin-bottom: 0.25em;
+}
+
+.internship-duration {
+	margin-bottom: 0.5em;
+}
+
+.internship-info {
+	list-style-position: inside;
+	line-height: 1.4em;
 }
 
 /* ============================================== OTC SECTION ======================================== */
