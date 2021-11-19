@@ -187,7 +187,7 @@ section h2 {
 }
 
 .project-tech {
-	background-color: #42424296;
+	background-color: #4242425e;
 	width: fit-content;
 	padding: 0.4em 1em;
 	margin: 2em 0 1em 0;
@@ -195,14 +195,15 @@ section h2 {
 }
 
 .more-info-link {
-	padding: 1em;
+	padding: 0.85em 1.25em;
 	border: 1px solid var(--border-color);
 	border-radius: 5px;
 	text-decoration: none;
 }
 
 .more-info-link:hover {
-	background-color: var(--border-color);
+	background-color: #42424285;
+	backdrop-filter: blur(4px);
 }
 
 /* ============================================== INTERNSHIPS SECTION ======================================== */
