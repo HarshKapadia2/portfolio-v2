@@ -11,7 +11,7 @@
 }
 
 html {
-	scroll-padding: 6.5vh 0 0 0;
+	scroll-padding: 10.5vh 0 0 0;
 	scroll-behavior: smooth;
 }
 
@@ -35,13 +35,20 @@ header {
 	background-color: #000000dd;
 	z-index: 1;
 	padding: 0 2em;
-	border-bottom: 1px solid #e0e0e01e;
 	backdrop-filter: blur(8px);
+}
+
+.header-border {
+	border-bottom: 1px solid #e0e0e01e;
 }
 
 #header-title {
 	font-size: 25px;
 	font-size: clamp(20px, 5vw, 25px);
+}
+
+.hidden-visibility {
+	visibility: hidden;
 }
 
 nav ul {
@@ -51,19 +58,23 @@ nav ul {
 }
 
 nav li {
-	padding: 0 1.5em;
+	padding: 0 0.5em;
 }
 
 a {
 	color: var(--text-color);
 	text-decoration-thickness: 1px;
 	text-decoration-color: #ffffffb0;
-	text-underline-offset: 5px;
+	text-underline-offset: 4px;
 	transition: all 0.1s ease-in;
 }
 
 a:hover {
 	text-decoration-color: var(--text-color);
+}
+
+nav li a {
+	padding: 0.75em;
 }
 
 /* ============================================== HOME SECTION ================================================== */
@@ -74,6 +85,10 @@ main {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+#header-border-indicator {
+	height: 1px;
 }
 
 #main-col-wrapper {
@@ -120,16 +135,7 @@ h2 {
 
 #arrow {
 	position: absolute;
-	animation: moveUpDown 1.5s ease-in-out infinite;
-}
-
-@keyframes moveUpDown {
-  0%, 100% {
-    bottom: 3em;
-  }
-  50% {
-    bottom: 2.5em;
-  }
+	bottom: 2em;
 }
 
 /* ========================================= PROJECTS (+ TALKS AND OTC) SECTION ============================================= */
@@ -212,7 +218,6 @@ section h2 {
 
 .more-info-link:hover {
 	background-color: #42424285;
-	backdrop-filter: blur(4px);
 }
 
 /* ============================================== INTERNSHIPS SECTION ======================================== */
@@ -238,7 +243,7 @@ section h2 {
 
 .list-style-inside {
 	list-style-position: inside;
-	line-height: 2em;
+	line-height: 1.7em;
 }
 
 /* ============================================== OTC AND ABOUT SECTIONS ======================================== */
@@ -253,7 +258,10 @@ section h2 {
 
 footer {
 	height: 10vh;
+	display: flex;
 	text-align: center;
+	align-items: center;
+	margin: 0 0.5em;
 }
 
 /* ============================================== SCROLL BAR ======================================== */
@@ -320,7 +328,7 @@ body::-webkit-scrollbar-thumb:hover {
 		display: flex;
 		flex-direction: column;
 		position: absolute;
-		top: 7vh;
+		top: 11vh;
 		right: 1.5vh;
 		padding: 0.5em 0em;
 		z-index: 1;
@@ -333,7 +341,7 @@ body::-webkit-scrollbar-thumb:hover {
 		display: flex;
 		justify-content: flex-end;
 		margin-left: 0;
-		padding: 0.5em 0.5em 0.5em 2em;
+		padding: 0 0.5em 0 2em;
 	}
 
 	.hide-burger-menu {
