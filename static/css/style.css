@@ -11,7 +11,7 @@
 }
 
 html {
-	scroll-padding: 6.5vh 0 0 0;
+	scroll-padding: 10.5vh 0 0 0;
 	scroll-behavior: smooth;
 }
 
@@ -25,20 +25,30 @@ body {
 }
 
 header {
-	height: 6vh;
+	height: 10vh;
 	width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	position: fixed;
 	background-color: var(--bg-color);
+	background-color: #000000dd;
 	z-index: 1;
 	padding: 0 2em;
+	backdrop-filter: blur(8px);
+}
+
+.header-border {
+	border-bottom: 1px solid #e0e0e01e;
 }
 
 #header-title {
 	font-size: 25px;
 	font-size: clamp(20px, 5vw, 25px);
+}
+
+.hidden-visibility {
+	visibility: hidden;
 }
 
 nav ul {
@@ -48,13 +58,23 @@ nav ul {
 }
 
 nav li {
-	padding: 0 1em;
+	padding: 0 0.5em;
 }
 
 a {
-	color: var(--main-color);
+	color: var(--text-color);
 	text-decoration-thickness: 1px;
+	text-decoration-color: #ffffffb0;
 	text-underline-offset: 4px;
+	transition: all 0.1s ease-in;
+}
+
+a:hover {
+	text-decoration-color: var(--text-color);
+}
+
+nav li a {
+	padding: 0.75em;
 }
 
 /* ============================================== HOME SECTION ================================================== */
@@ -65,6 +85,10 @@ main {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+#header-border-indicator {
+	height: 1px;
 }
 
 #main-col-wrapper {
@@ -131,7 +155,7 @@ section h2 {
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	gap: 2em;
 	padding: 2em 0 5em 0;
-	align-items: center;
+	align-items: stretch;
 }
 
 .project-card {
@@ -177,15 +201,23 @@ section h2 {
 	font-size: clamp(15px, 2vw, 17px);
 }
 
+.project-tech {
+	background-color: #4242425e;
+	width: fit-content;
+	padding: 0.4em 1em;
+	margin: 2em 0 1em 0;
+	border-radius: 1em;
+}
+
 .more-info-link {
-	padding: 1em;
+	padding: 0.85em 1.25em;
 	border: 1px solid var(--border-color);
 	border-radius: 5px;
 	text-decoration: none;
 }
 
 .more-info-link:hover {
-	background-color: var(--border-color);
+	background-color: #42424285;
 }
 
 /* ============================================== INTERNSHIPS SECTION ======================================== */
@@ -211,7 +243,7 @@ section h2 {
 
 .list-style-inside {
 	list-style-position: inside;
-	line-height: 1.4em;
+	line-height: 1.7em;
 }
 
 /* ============================================== OTC AND ABOUT SECTIONS ======================================== */
@@ -225,8 +257,11 @@ section h2 {
 /* ============================================== FOOTER ======================================== */
 
 footer {
-	margin: 2em 1em;
+	height: 10vh;
+	display: flex;
 	text-align: center;
+	align-items: center;
+	margin: 0 0.5em;
 }
 
 /* ============================================== SCROLL BAR ======================================== */
@@ -293,7 +328,7 @@ body::-webkit-scrollbar-thumb:hover {
 		display: flex;
 		flex-direction: column;
 		position: absolute;
-		top: 7vh;
+		top: 11vh;
 		right: 1.5vh;
 		padding: 0.5em 0em;
 		z-index: 1;
@@ -306,7 +341,7 @@ body::-webkit-scrollbar-thumb:hover {
 		display: flex;
 		justify-content: flex-end;
 		margin-left: 0;
-		padding: 0.5em 0.5em 0.5em 2em;
+		padding: 0 0.5em 0 2em;
 	}
 
 	.hide-burger-menu {
