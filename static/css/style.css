@@ -125,10 +125,10 @@ h2 {
 
 @keyframes moveUpDown {
   0%, 100% {
-    bottom: 4em;
+    bottom: 3em;
   }
   50% {
-    bottom: 3.5em;
+    bottom: 2.5em;
   }
 }
 
