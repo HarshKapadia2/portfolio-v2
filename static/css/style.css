@@ -140,7 +140,7 @@ section h2 {
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	gap: 2em;
 	padding: 2em 0 5em 0;
-	align-items: center;
+	align-items: stretch;
 }
 
 .project-card {
@@ -184,6 +184,14 @@ section h2 {
 	line-height: 1.4em;
 	font-size: 16px;
 	font-size: clamp(15px, 2vw, 17px);
+}
+
+.project-tech {
+	background-color: #42424296;
+	width: fit-content;
+	padding: 0.4em 1em;
+	margin: 2em 0 1em 0;
+	border-radius: 1em;
 }
 
 .more-info-link {
