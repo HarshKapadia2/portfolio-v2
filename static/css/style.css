@@ -25,15 +25,18 @@ body {
 }
 
 header {
-	height: 6vh;
+	height: 10vh;
 	width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	position: fixed;
 	background-color: var(--bg-color);
+	background-color: #000000dd;
 	z-index: 1;
 	padding: 0 2em;
+	border-bottom: 1px solid #e0e0e01e;
+	backdrop-filter: blur(8px);
 }
 
 #header-title {
@@ -48,13 +51,19 @@ nav ul {
 }
 
 nav li {
-	padding: 0 1em;
+	padding: 0 1.5em;
 }
 
 a {
-	color: var(--main-color);
+	color: var(--text-color);
 	text-decoration-thickness: 1px;
-	text-underline-offset: 4px;
+	text-decoration-color: #ffffffb0;
+	text-underline-offset: 5px;
+	transition: all 0.1s ease-in;
+}
+
+a:hover {
+	text-decoration-color: var(--text-color);
 }
 
 /* ============================================== HOME SECTION ================================================== */
