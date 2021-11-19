@@ -120,7 +120,16 @@ h2 {
 
 #arrow {
 	position: absolute;
-	bottom: 2em;
+	animation: moveUpDown 1.5s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    bottom: 4em;
+  }
+  50% {
+    bottom: 3.5em;
+  }
 }
 
 /* ========================================= PROJECTS (+ TALKS AND OTC) SECTION ============================================= */
@@ -243,7 +252,7 @@ section h2 {
 /* ============================================== FOOTER ======================================== */
 
 footer {
-	margin: 2em 1em;
+	height: 10vh;
 	text-align: center;
 }
 
