@@ -31,8 +31,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	position: fixed;
-	background-color: var(--bg-color);
-	background-color: #000000dd;
+	background-color: #000000bb;
 	z-index: 1;
 	padding: 0 2em;
 	backdrop-filter: blur(8px);
@@ -135,7 +134,17 @@ h2 {
 
 #arrow {
 	position: absolute;
-	bottom: 2em;
+	animation: moveUpDown 1.5s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+	0%,
+	100% {
+		bottom: 3em;
+	}
+	50% {
+		bottom: 3.5em;
+	}
 }
 
 /* ========================================= PROJECTS (+ TALKS AND OTC) SECTION ============================================= */
