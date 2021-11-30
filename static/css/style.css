@@ -63,9 +63,9 @@ nav li {
 a {
 	color: var(--text-color);
 	text-decoration-thickness: 1px;
-	text-decoration-color: #ffffff70;
+	text-decoration-color: #ffffffb0;
 	text-underline-offset: 4px;
-	transition: all 0.15s ease-in;
+	transition: all 0.1s ease-in;
 }
 
 a:hover {
