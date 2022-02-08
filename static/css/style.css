@@ -210,12 +210,17 @@ section h2 {
 	font-size: clamp(15px, 2vw, 17px);
 }
 
+.project-descp p {
+	margin-bottom: 0.5em;
+}
+
 .project-tech {
 	background-color: #4242425e;
 	width: fit-content;
 	padding: 0.4em 1em;
 	margin: 2em 0 1em 0;
 	border-radius: 1em;
+	line-height: 1.5em;
 }
 
 .more-info-link {
