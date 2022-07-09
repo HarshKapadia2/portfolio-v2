@@ -1,4 +1,5 @@
 name: Publish to GitHub Pages
+
 on:
     push:
         branches:
@@ -7,24 +8,25 @@ on:
             - ".github/workflows/**"
             - "static/**"
             - CNAME
+            - "*.png"
             - "*.html"
             - robots.txt
     workflow_dispatch: # Allows manual execution of workflow
 
 jobs:
-    deploy-website:
+    deploy-web-site:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
 
-            - name: Move files to 'build' directory
+            - name: Move files to `build` directory
               run: |
                   mkdir build
-                  cp -r static CNAME *.html robots.txt build
+                  cp -r static CNAME *.png *.html robots.txt build
 
             - name: Deploy to GitHub Pages
-              uses: JamesIves/github-pages-deploy-action@4.1.8
+              uses: JamesIves/github-pages-deploy-action@v4
               with:
                   branch: gh-pages
                   folder: build
