@@ -101,13 +101,17 @@ main {
 h1 {
 	font-size: 60px;
 	font-size: clamp(50px, 10vw, 90px);
-	margin-bottom: 0.25em;
+	margin-bottom: 0.1em;
 }
 
 h2 {
 	font-size: 30px;
 	font-size: clamp(20px, 5vw, 35px);
-	margin-bottom: 0.75em;
+	margin-bottom: 1em;
+}
+
+#main-descp {
+	font-size: clamp(25px, 5vw, 35px);
 }
 
 #socials {
@@ -118,7 +122,7 @@ h2 {
 
 #socials img {
 	width: 1.5em !important;
-	width: clamp(27px, 5vw, 40px) !important;
+	width: clamp(27px, 5vw, 35px) !important;
 	margin: 0 0.5em;
 }
 
@@ -154,6 +158,10 @@ section {
 	width: 90vw;
 }
 
+section:last-of-type {
+	margin-bottom: 1em;
+}
+
 section h2 {
 	font-size: 30px;
 	font-size: clamp(25px, 5vw, 35px);
@@ -181,16 +189,12 @@ section h2 {
 }
 
 .project-card .iframe-wrapper {
-	position: relative;
-	padding-top: 56.25%;
+	aspect-ratio: 16/9;
 	margin-bottom: 1em;
 }
 
 .project-card iframe {
 	border-radius: 5px;
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
 	height: 100%;
 }
@@ -314,7 +318,7 @@ body::-webkit-scrollbar-thumb:hover {
 	}
 
 	#project-cards-wrapper {
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	}
 }
 
