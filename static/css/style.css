@@ -101,7 +101,7 @@ main {
 h1 {
 	font-size: 60px;
 	font-size: clamp(50px, 10vw, 90px);
-	margin-bottom: 0.1em;
+	margin-bottom: 0.2em;
 }
 
 h2 {
