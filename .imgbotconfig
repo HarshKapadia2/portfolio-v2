@@ -1,3 +1,5 @@
-"ignoredFiles": [
-    "static/img/dp/*"
-]
+{
+    "ignoredFiles": [
+        "static/img/dp/*"
+    ]
+}
