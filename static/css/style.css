@@ -238,24 +238,24 @@ section h2 {
 	background-color: #42424285;
 }
 
-/* ============================================== INTERNSHIPS SECTION ======================================== */
+/* ============================================== EXPERIENCES ======================================== */
 
-.internship-exp {
+.experience {
 	margin-bottom: 2em;
 }
 
-.internship-name {
+.experience-name {
 	margin-bottom: 0.75em;
 	font-weight: bold;
 	font-size: 20px;
 	font-size: clamp(18px, 2vw, 20px);
 }
 
-.internship-position {
+.experience-position {
 	margin-bottom: 0.25em;
 }
 
-.internship-duration {
+.experience-duration {
 	margin-bottom: 0.5em;
 }
 
@@ -339,7 +339,7 @@ body::-webkit-scrollbar-thumb:hover,
 	}
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1460px) {
 	/* BURGER MENU */
 
 	.navbar-ul {
