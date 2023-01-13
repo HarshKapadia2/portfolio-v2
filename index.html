@@ -27,14 +27,17 @@
 
 		<meta
 			name="keywords"
-			content="Harsh Kapadia, Web Developer, Git, OTC, Speaker, Our Tech Community"
+			content="Harsh Kapadia, OTC, Our Tech Community, Web Developer, Computer Networking, Git"
 		/>
-		<meta name="description" content="Web Developer" />
+		<meta name="description" content="Web Dev, Computer Networking, Git" />
 		<meta name="author" content="Harsh Kapadia" />
 		<meta property="og:site_name" content="Harsh Kapadia" />
 		<meta property="og:title" content="Harsh Kapadia" />
 		<meta property="og:type" content="website" />
-		<meta property="og:description" content="Web Developer" />
+		<meta
+			property="og:description"
+			content="Web Dev, Computer Networking, Git"
+		/>
 		<meta property="og:url" content="https://harshkapadia.me" />
 		<meta
 			property="og:image"
@@ -178,33 +181,38 @@
 
 			<p>
 				I am Harsh Kapadia (He/Him), a
-				<a href="#projects">Web Developer</a>, a
-				<a href="#talks">Speaker</a> and an Organiser at
-				<a href="#otc">Our Tech Community</a>.
-			</p>
-			<p>
-				I love
-				<a
-					href="https://git.harshkapadia.me"
-					target="_blank"
-					rel="noreferrer"
-					>Git</a
-				>,
+				<a href="#projects">Web Developer</a>. I love
 				<a
 					href="https://networking.harshkapadia.me"
 					target="_blank"
 					rel="noreferrer"
 					>Computer Networking</a
+				>,
+				<a
+					href="https://git.harshkapadia.me"
+					target="_blank"
+					rel="noreferrer"
+					>Git</a
 				>
 				and communities.
 			</p>
 			<p>
-				I am also a
+				I am an Organiser at <a href="#otc">Our Tech Community</a>, a
+				<a href="#talks">Speaker</a> and a
 				<a
 					href="https://githubcampus.expert/HarshKapadia2"
 					target="_blank"
 					rel="noreferrer"
 					>GitHub Campus Expert</a
+				>.
+			</p>
+			<p>
+				I am currently pursuing a Masters in Computer Science at
+				<a
+					href="https://www.bu.edu/cas/about/about-grs"
+					target="_blank"
+					rel="noreferrer"
+					>Boston University</a
 				>.
 			</p>
 			<p>
@@ -248,18 +256,14 @@
 						<div class="project-name">Git Graph</div>
 						<div class="project-descp">
 							<p>
-								A web app to visualize the Directed Acyclic
-								Graph that Git creates to connect Commit, Tree
-								and Blob objects internally.
+								A web app to visualize the graphs that Git
+								creates to connect Commit, Tree and Blob objects
+								internally.
 							</p>
 							<p>
-								Give it the <code>.git</code> directory of a
-								repository and it will automatically generate
-								the graph.
-							</p>
-							<p>
-								All local branches can be visualized and
-								specific commits can be highlighted.
+								Takes an existing repository to generate graph
+								visualizations for local branches and allows
+								highlighting specific commits.
 							</p>
 						</div>
 						<div class="project-links">
@@ -283,18 +287,59 @@
 				<div class="project-card">
 					<img
 						loading="lazy"
+						src="static/img/projects/tcp_version_performance_comparison.png"
+						alt="Performance Comparison of TCP Versions"
+					/>
+					<div class="project-info">
+						<div class="project-name">
+							Performance Comparison of TCP Versions
+						</div>
+						<div class="project-descp">
+							<p>
+								Compared Congestion Window size responses of TCP
+								Reno, TCP CUBIC, TCP Vegas and TCP BBR to
+								network congestion.
+							</p>
+							<p>
+								Compared the fairness of two TCP versions
+								running simultaneously on the same connection.
+							</p>
+						</div>
+						<div class="project-links">
+							<a
+								href="https://harshkapadia2.github.io/tcp-version-performance-comparison"
+								target="_blank"
+								rel="noreferrer"
+								>Report</a
+							>,
+							<a
+								href="https://github.com/HarshKapadia2/tcp-version-performance-comparison"
+								target="_blank"
+								rel="noreferrer"
+								>GitHub</a
+							>
+						</div>
+						<div class="project-tech">GENI, Shell, R</div>
+					</div>
+				</div>
+
+				<div class="project-card">
+					<img
+						loading="lazy"
 						src="static/img/projects/git_internals.png"
 						alt="Git Internals"
 					/>
 					<div class="project-info">
 						<div class="project-name">Git Internals</div>
 						<div class="project-descp">
-							<p>A PWA exploring the internals of Git.</p>
 							<p>
-								It explores the contents of the
-								<code>.git</code> directory, the contents of the
-								Commit, Tree and Blob objects in Git and the
-								connections between the Git Objects.
+								A PWA documenting and explaining the internals
+								of Git.
+							</p>
+							<p>
+								Explains the contents of the
+								<code>.git</code> directory and the connections
+								between Commit, Tree and Blob objects.
 							</p>
 						</div>
 						<div class="project-links">
@@ -316,7 +361,8 @@
 								href="https://harshkapadia2.github.io/asciidoctor-jet"
 								target="_blank"
 								rel="noreferrer"
-								>Asciidoctor Jet</a
+							>
+								Asciidoctor Jet</a
 							>, GitHub Pages
 						</div>
 					</div>
@@ -367,7 +413,8 @@
 								href="https://harshkapadia2.github.io/asciidoctor-jet"
 								target="_blank"
 								rel="noreferrer"
-								>Asciidoctor Jet</a
+							>
+								Asciidoctor Jet</a
 							>, GitHub Pages
 						</div>
 					</div>
@@ -382,15 +429,23 @@
 					<div class="project-info">
 						<div class="project-name">OTC CatchUp</div>
 						<div class="project-descp">
-							<p>A web app for OTC CatchUp sessions.</p>
 							<p>
-								It is used to host session summaries and manage
-								project showcases and meet joining links.
+								Created a web app for managing weekly OTC
+								CatchUp Tech discussion sessions.
+							</p>
+							<p>
+								Hosts session summaries created using
+								Asciidoctor Jet and manages session joining
+								links using Deta Base.
+							</p>
+							<p>
+								Currently helping manage active Open Source
+								contributions to the project.
 							</p>
 						</div>
 						<div class="project-links">
 							<a
-								href="https://catchup.ourtech.community/"
+								href="https://catchup.ourtech.community"
 								target="_blank"
 								rel="noreferrer"
 								>Web app</a
@@ -403,13 +458,13 @@
 							>
 						</div>
 						<div class="project-tech">
-							Node.js,
+							Node.js (Express.js),
 							<a
 								href="https://harshkapadia2.github.io/asciidoctor-jet"
 								target="_blank"
 								rel="noreferrer"
 								>Asciidoctor Jet</a
-							>, Shell, HTML, CSS, JS, Deta Base, Deta
+							>, Shell, HTML, CSS, JS, Deta
 						</div>
 					</div>
 				</div>
@@ -428,22 +483,23 @@
 								raw gemstones.
 							</p>
 							<p>
-								It uses the Fetch API to connect with the PHP
-								API and the Web Components API to optimize
+								Users can add items to their cart, place orders
+								and view their shopping history and profile.
+							</p>
+							<p>
+								Uses the Fetch API to connect with the PHP API
+								and uses the Web Components API to optimize
 								rendering products.
 							</p>
 							<p>
-								<strong>
-									It is also available as an Android app
-									called
-									<a
-										href="https://github.com/HarshKapadia2/hys-gems"
-										target="_blank"
-										rel="noreferrer"
-										>HYS Gems</a
-									>
-									built using React Native.
-								</strong>
+								Also available as an Android app called
+								<a
+									href="https://github.com/HarshKapadia2/hys-gems"
+									target="_blank"
+									rel="noreferrer"
+									>HYS Gems</a
+								>
+								built using React Native.
 							</p>
 						</div>
 						<div class="project-links">
@@ -486,16 +542,16 @@
 								>.
 							</p>
 							<p>
-								It has
 								<a
 									href="https://harshkapadia2.github.io/asciidoctor-jet/#_features"
 									target="_blank"
 									rel="noreferrer"
-									>features</a
+									>Features</a
 								>
 								such as PWA support, theme switcher, image lazy
 								loading, 'Back to Top' button, etc. in addition
-								to the default Asciidoctor template.
+								to the default Asciidoctor template are
+								provided.
 							</p>
 						</div>
 						<div class="project-links">
@@ -514,83 +570,6 @@
 						</div>
 						<div class="project-tech">
 							Asciidoctor, CSS, JS, GitHub Pages
-						</div>
-					</div>
-				</div>
-
-				<div class="project-card">
-					<img
-						loading="lazy"
-						src="static/img/projects/ocr.png"
-						alt="NanoNets' OCR SDK"
-					/>
-					<div class="project-info">
-						<div class="project-name">NanoNets' OCR SDK</div>
-						<div class="project-descp">
-							<p>
-								An Optical Character Recognition (OCR) Node.js
-								SDK for
-								<a
-									href="https://nanonets.com"
-									target="_blank"
-									rel="noreferrer"
-									>NanoNets</a
-								>' REST API as a part of an internship.
-							</p>
-							<p>It supports both, ES Modules and CommonJS.</p>
-						</div>
-						<div class="project-links">
-							<a
-								href="https://www.npmjs.com/package/@nanonets/optical-character-recognition"
-								target="_blank"
-								rel="noreferrer"
-								>npm</a
-							>,
-							<a
-								href="https://github.com/NanoNets/ocr-js-sdk"
-								target="_blank"
-								rel="noreferrer"
-								>GitHub</a
-							>
-						</div>
-						<div class="project-tech">Node.js, JS, npm</div>
-					</div>
-				</div>
-
-				<div class="project-card">
-					<img
-						loading="lazy"
-						src="static/img/projects/preview_markdown.png"
-						alt="Preview Markdown"
-					/>
-					<div class="project-info">
-						<div class="project-name">Preview Markdown</div>
-						<div class="project-descp">
-							<p>
-								A web app that renders GitHub-styled markdown
-								live.
-							</p>
-							<p>
-								It supports GitHub's light and dark themed
-								Markdown rendering.
-							</p>
-						</div>
-						<div class="project-links">
-							<a
-								href="https://harshkapadia2.github.io/preview-markdown"
-								target="_blank"
-								rel="noreferrer"
-								>Web app</a
-							>,
-							<a
-								href="https://github.com/HarshKapadia2/preview-markdown"
-								target="_blank"
-								rel="noreferrer"
-								>GitHub</a
-							>
-						</div>
-						<div class="project-tech">
-							React.js, CSS, GitHub Pages
 						</div>
 					</div>
 				</div>
@@ -657,15 +636,13 @@
 
 			<ul class="list-style-inside">
 				<li>
-					<strong>Web</strong>: React.js, Node.js (Express.js), Flask,
-					HTML, CSS, JS
+					<b>Web</b>: React.js, Node.js (Express.js), Flask, HTML,
+					CSS, JS
 				</li>
-				<li><strong>Databases</strong>: MySQL, MongoDB</li>
+				<li><b>Databases</b>: MySQL, MongoDB</li>
+				<li><b>Platforms</b>: GitHub, Firebase, Heroku, Deta</li>
 				<li>
-					<strong>Platforms</strong>: GitHub, Firebase, Heroku, Deta
-				</li>
-				<li>
-					<strong>Tools</strong>: Git,
+					<b>Tools</b>: Git, Wireshark,
 					<a
 						href="https://harshkapadia2.github.io/asciidoctor-jet"
 						target="_blank"
@@ -673,7 +650,7 @@
 						>Asciidoctor Jet</a
 					>, Figma
 				</li>
-				<li><strong>Languages</strong>: JavaScript, Java, Python, C</li>
+				<li><b>Languages</b>: JavaScript, Java, Python, C</li>
 			</ul>
 		</section>
 
@@ -681,40 +658,6 @@
 			<h2>Talks</h2>
 
 			<div id="project-cards-wrapper">
-				<div class="project-card">
-					<div class="iframe-wrapper">
-						<iframe
-							loading="lazy"
-							width="560"
-							height="315"
-							src="https://www.youtube-nocookie.com/embed/HF12-91iazM"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-					</div>
-					<div class="project-info">
-						<div class="project-name">
-							Git Basics - The basics of Git and GitHub!
-						</div>
-						<div class="project-links">
-							<a
-								href="https://www.youtube.com/watch?v=HF12-91iazM"
-								target="_blank"
-								rel="noreferrer"
-								>YouTube</a
-							>,
-							<a
-								href="https://talks.harshkapadia.me/git_basics"
-								target="_blank"
-								rel="noreferrer"
-								>Talk details</a
-							>
-						</div>
-					</div>
-				</div>
-
 				<div class="project-card">
 					<div class="iframe-wrapper">
 						<iframe
@@ -741,6 +684,40 @@
 							>,
 							<a
 								href="https://talks.harshkapadia.me/git_internals"
+								target="_blank"
+								rel="noreferrer"
+								>Talk details</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-card">
+					<div class="iframe-wrapper">
+						<iframe
+							loading="lazy"
+							width="560"
+							height="315"
+							src="https://www.youtube-nocookie.com/embed/HF12-91iazM"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</div>
+					<div class="project-info">
+						<div class="project-name">
+							Git Basics - The basics of Git and GitHub!
+						</div>
+						<div class="project-links">
+							<a
+								href="https://www.youtube.com/watch?v=HF12-91iazM"
+								target="_blank"
+								rel="noreferrer"
+								>YouTube</a
+							>,
+							<a
+								href="https://talks.harshkapadia.me/git_basics"
 								target="_blank"
 								rel="noreferrer"
 								>Talk details</a
@@ -878,7 +855,7 @@
 				is a Tech-loving open-to-all community that I started in January
 				2020.
 			</p>
-			<p>We are a community of 370+ members.</p>
+			<p>We are a community of 450+ members.</p>
 			<p>
 				Explore
 				<a
@@ -900,11 +877,11 @@
 				<div class="project-card">
 					<img
 						loading="lazy"
-						src="static/img/otc_catchup_80.jpg"
+						src="static/img/otc/otc_catchup_111.jpg"
 						alt="OTC CatchUp Google Meet screenshot"
 					/>
 					<div class="project-info">
-						<div class="project-name">OTC CatchUp #80</div>
+						<div class="project-name">OTC CatchUp #111</div>
 						<div class="project-descp">
 							<p>
 								These are weekly informal sessions involving
@@ -930,15 +907,15 @@
 				<div class="project-card">
 					<img
 						loading="lazy"
-						src="static/img/otc_meetup_1.jpg"
+						src="static/img/otc/otc_meetup_2.jpg"
 						alt="OTC MeetUp group picture"
 					/>
 					<div class="project-info">
-						<div class="project-name">OTC MeetUp #1</div>
+						<div class="project-name">OTC MeetUp #2</div>
 						<div class="project-descp">
 							<p>
-								We successfully hosted our first official
-								in-person event with 62 people!
+								We held an in-person event full of informative
+								talks and good conversations, with 60+ people!
 							</p>
 						</div>
 						<div class="project-links">
