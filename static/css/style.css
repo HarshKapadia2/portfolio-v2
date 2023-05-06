@@ -311,9 +311,6 @@ body::-webkit-scrollbar-thumb:hover,
 
 .picture-section {
 	margin-top: 12vh;
-	/* display: flex;
-	flex-direction: column;
-	align-items: center; */
 }
 
 .picture-section h3 {
