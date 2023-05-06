@@ -251,12 +251,14 @@ section h2 {
 	font-size: clamp(18px, 2vw, 20px);
 }
 
-.experience-position {
+.experience-position,
+.experience-duration,
+.experience-location {
 	margin-bottom: 0.25em;
 }
 
-.experience-duration {
-	margin-bottom: 0.5em;
+.experience-web-site {
+	margin-bottom: 0.75em;
 }
 
 .list-style-inside {
@@ -309,9 +311,6 @@ body::-webkit-scrollbar-thumb:hover,
 
 .picture-section {
 	margin-top: 12vh;
-	/* display: flex;
-	flex-direction: column;
-	align-items: center; */
 }
 
 .picture-section h3 {
