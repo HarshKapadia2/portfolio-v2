@@ -211,72 +211,30 @@
 			<div>
 				<p>
 					I am Harsh Kapadia (he/him), a Software Engineer currently
-					based in Austin, TX, USA. I have a keen interest in the Web,
-					Git, exploring the internals of tools and technologies, and
+					based in Austin, TX, USA. I am interested in the Web,
+					exploring the internals of tools and technologies, and
 					communities.
 				</p>
 
 				<p>
-					I have been enjoying learning more about servers at my
-					current role as a Field Applications Engineer at AMD, while
-					trying to lead a more disciplined and balanced life.
+					I have been enjoying building software tools and learning
+					more about servers at my current role at AMD, while trying
+					to lead a more disciplined and balanced life.
 				</p>
 
 				<p>
-					I like building <a href="#projects">projects</a>,
-					<a href="#talks">talking</a> about my learnings in Tech, and
-					writing about
-					<a
-						href="https://git.harshkapadia.me"
-						target="_blank"
-						rel="noreferrer"
-						>Git</a
-					>
-					and Networking protocols like
-					<a
-						href="https://networking.harshkapadia.me/tcp"
-						target="_blank"
-						rel="noreferrer"
-						>TCP</a
-					>,
-					<a
-						href="https://networking.harshkapadia.me/ssh"
-						target="_blank"
-						rel="noreferrer"
-						>SSH</a
-					>,
-					<a
-						href="https://networking.harshkapadia.me/tls"
-						target="_blank"
-						rel="noreferrer"
-						>TLS</a
-					>
-					and
-					<a
-						href="https://networking.harshkapadia.me/homa"
-						target="_blank"
-						rel="noreferrer"
-						>Homa</a
-					>.
+					I like building <a href="#projects">projects</a>, and
+					<a href="#talks">talking</a> and
+					<a href="#writings">writing</a> about my learnings.
 				</p>
 
 				<p>
-					I started <a href="#otc">Our Tech Community (OTC)</a> over
-					four years ago and we regularly conduct events for all of us
-					to learn more! Apart from that, I am a
-					<a
-						href="https://githubcampus.expert/HarshKapadia2"
-						target="_blank"
-						rel="noreferrer"
-						>GitHub Campus Expert</a
-					>
-					as well.
+					I started <a href="#otc">Our Tech Community (OTC)</a> in
+					2020 and we regularly conduct events for all of us to learn
+					more.
 				</p>
 
-				<p>
-					I love reading books, listening to music, watching YouTube
-					and Bird Watching!
-				</p>
+				<p>I love books, music, YouTube and Bird Watching.</p>
 
 				<p>
 					Feel free to
@@ -325,20 +283,19 @@
 				</div>
 				<ul class="list-style-inside">
 					<li>
-						Building software to support debug tools for AMD EPYC
-						server processors.
+						Building software tools to support debug tools for AMD
+						EPYC server processors
 					</li>
 					<li>
-						Building a web app to provision and manage Virtual
-						Machines configured with debug software and scripts,
-						user public keys, persistent storage and VNC to reduce
-						server issue debug time, using KVM, Bash scripts,
-						Express.js and React.js.
+						Building a web app to provision, pool and manage Virtual
+						Machines configured with user-requested debug software
+						and scripts, public keys, persistent storage and VNC to
+						reduce server issue debug time, using KVM, Bash scripts,
+						Express.js and React.js
 					</li>
 					<li>
 						Automating benchmark installation, execution and
-						evaluation through an API and scripts to improve the
-						productivity of the team.
+						evaluation to improve the productivity of the team
 					</li>
 				</ul>
 			</div>
@@ -366,14 +323,14 @@
 				<ul class="list-style-inside">
 					<li>
 						Built a proof-of-concept web app to provision and manage
-						Virtual Machines configured with debug software and
-						scripts, user public keys, persistent storage and VNC to
-						reduce server issue debug time by 10%, using KVM, Bash
-						scripts, Express.js and React.js.
+						Virtual Machines configured with user public keys,
+						persistent storage and VNC to reduce server issue debug
+						time, using KVM, Bash scripts, Express.js and React.js
 					</li>
 					<li>
-						Benchmarked network bandwidth (iperf3), memory bandwidth
-						(STREAM) and CPU performance (DGEMM) of servers.
+						Benchmarked the network bandwidth (iperf3), memory
+						bandwidth (STREAM) and CPU performance (DGEMM) of
+						servers
 					</li>
 				</ul>
 			</div>
@@ -394,11 +351,11 @@
 				<ul class="list-style-inside">
 					<li>
 						Published two OCR and Image Classification SDKs to
-						improve development time by 50%.
+						improve development time by 50%
 					</li>
 					<li>
 						Enhanced documentation by enforcing the OpenAPI 3.1.0
-						standard and adding more code samples.
+						standard and adding situational code samples
 					</li>
 					<li>
 						npm packages:
@@ -434,7 +391,10 @@
 					>
 				</div>
 				<ul class="list-style-inside">
-					<li>Tested their ERP software for errors and bugs.</li>
+					<li>
+						Tested in-house ERP software for correctness, errors and
+						bugs
+					</li>
 				</ul>
 			</div>
 		</section>
@@ -446,7 +406,7 @@
 				<div class="project-card">
 					<img
 						loading="lazy"
-						src="static/img/projects/git_graph.png"
+						src="static/img/projects/git-graph.png"
 						alt="Git Graph"
 					/>
 					<div class="project-info">
@@ -484,7 +444,92 @@
 				<div class="project-card">
 					<img
 						loading="lazy"
-						src="static/img/projects/tcp_version_performance_comparison.png"
+						src="static/img/projects/parse-elf.png"
+						alt="Parse ELF"
+					/>
+					<div class="project-info">
+						<div class="project-name">Parse ELF</div>
+						<div class="project-descp">
+							<p>
+								A 64-bit Executable and Linkable Format (ELF)
+								file parser in C.
+							</p>
+							<p>
+								ELF is the primary file format of executable
+								files on Linux.
+							</p>
+							<p>
+								This utility parses and prints the ELF (File)
+								Header, the Section Headers, the Segment
+								(Program) Headers and the dynamic dependencies
+								in any 64-bit ELF file.
+							</p>
+							<p>
+								Used as a part of
+								<a
+									href="https://talks.harshkapadia.me/elf"
+									target="_blank"
+									rel="noreferrer"
+									>my talk on ELF files</a
+								>.
+							</p>
+						</div>
+						<div class="project-links">
+							<a
+								href="https://github.com/HarshKapadia2/parse-elf"
+								target="_blank"
+								rel="noreferrer"
+								>GitHub</a
+							>
+						</div>
+						<div class="project-tech">C</div>
+					</div>
+				</div>
+
+				<div class="project-card">
+					<img
+						loading="lazy"
+						src="static/img/projects/mac-and-ip-routing.png"
+						alt="HPS Gems"
+					/>
+					<div class="project-info">
+						<div class="project-name">MAC and IP Routing</div>
+						<div class="project-descp">
+							<p>
+								A demonstration to illustrate how IP and MAC
+								addresses work together to route packets.
+							</p>
+							<p>
+								Analyzing the MAC and IP packets in a network of
+								clients and routers to understand how a machine
+								can reach the other.
+							</p>
+							<p>
+								Used as a part of
+								<a
+									href="https://talks.harshkapadia.me/mac-and-ip-routing"
+									target="_blank"
+									rel="noreferrer"
+									>my talk on MAC and IP routing</a
+								>.
+							</p>
+						</div>
+						<div class="project-links">
+							<a
+								href="https://github.com/HarshKapadia2/mac-ip-routing"
+								target="_blank"
+								rel="noreferrer"
+								>GitHub</a
+							>
+						</div>
+						<div class="project-tech">Docker, Bash</div>
+					</div>
+				</div>
+
+				<div class="project-card">
+					<img
+						loading="lazy"
+						src="static/img/projects/tcp-version-performance-comparison.png"
 						alt="Performance Comparison of TCP Versions"
 					/>
 					<div class="project-info">
@@ -516,14 +561,14 @@
 								>GitHub</a
 							>
 						</div>
-						<div class="project-tech">GENI, Shell, R</div>
+						<div class="project-tech">GENI, Bash, R</div>
 					</div>
 				</div>
 
 				<div class="project-card">
 					<img
 						loading="lazy"
-						src="static/img/projects/git_internals.png"
+						src="static/img/projects/git-internals.png"
 						alt="Git Internals"
 					/>
 					<div class="project-info">
@@ -564,108 +609,6 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="project-card">
-					<img
-						loading="lazy"
-						src="static/img/projects/otc_catchup.png"
-						alt="OTC CatchUp"
-					/>
-					<div class="project-info">
-						<div class="project-name">OTC CatchUp</div>
-						<div class="project-descp">
-							<p>
-								Created a web app for managing weekly OTC
-								CatchUp Tech discussion sessions.
-							</p>
-							<p>
-								Hosts session summaries created using
-								Asciidoctor Jet and manages session joining
-								links using Deta Base.
-							</p>
-							<p>
-								Currently helping manage active Open Source
-								contributions to the project.
-							</p>
-						</div>
-						<div class="project-links">
-							<a
-								href="https://catchup.ourtech.community"
-								target="_blank"
-								rel="noreferrer"
-								>Web app</a
-							>,
-							<a
-								href="https://github.com/OurTechCommunity/catchup"
-								target="_blank"
-								rel="noreferrer"
-								>GitHub</a
-							>
-						</div>
-						<div class="project-tech">
-							Node.js (Express.js),
-							<a
-								href="https://harshkapadia2.github.io/asciidoctor-jet"
-								target="_blank"
-								rel="noreferrer"
-								>Asciidoctor Jet</a
-							>, Shell, HTML, CSS, JS, Deta
-						</div>
-					</div>
-				</div>
-
-				<div class="project-card">
-					<img
-						loading="lazy"
-						src="static/img/projects/hps_gems.png"
-						alt="HPS Gems"
-					/>
-					<div class="project-info">
-						<div class="project-name">HPS Gems</div>
-						<div class="project-descp">
-							<p>
-								A JAMstack e-Commerce CRUD web app for selling
-								raw gemstones.
-							</p>
-							<p>
-								Users can add items to their cart, place orders
-								and view their shopping history and profile.
-							</p>
-							<p>
-								Uses the Fetch API to connect with the PHP API
-								and uses the Web Components API to optimize
-								rendering products.
-							</p>
-							<p>
-								Also available as an Android app called
-								<a
-									href="https://github.com/HarshKapadia2/hys-gems"
-									target="_blank"
-									rel="noreferrer"
-									>HYS Gems</a
-								>
-								built using React Native.
-							</p>
-						</div>
-						<div class="project-links">
-							<a
-								href="https://hps-gems.herokuapp.com"
-								target="_blank"
-								rel="noreferrer"
-								>Web app</a
-							>,
-							<a
-								href="https://github.com/HarshKapadia2/hps-gems"
-								target="_blank"
-								rel="noreferrer"
-								>GitHub</a
-							>
-						</div>
-						<div class="project-tech">
-							PHP, MySQL, HTML, CSS, JS, Heroku
-						</div>
-					</div>
-				</div>
 			</div>
 
 			<a
@@ -681,24 +624,14 @@
 			<h2>Skills</h2>
 
 			<ul class="list-style-inside">
+				<li><b>Languages</b>: JavaScript, Bash, C, Java, Python</li>
 				<li>
 					<b>Web</b>: React.js, Node.js (Express.js), Flask, HTML,
 					CSS, JS
 				</li>
 				<li><b>Databases</b>: MySQL, MongoDB</li>
-				<li><b>Platforms</b>: GitHub, Firebase, Heroku</li>
-				<li>
-					<b>Tools</b>: Git, iperf3, Wireshark, Tcpdump,
-					<a
-						href="https://harshkapadia2.github.io/asciidoctor-jet"
-						target="_blank"
-						rel="noreferrer"
-						>Asciidoctor Jet</a
-					>
-				</li>
-				<li><b>Languages</b>: JavaScript, Java, Bash, C, Python</li>
-				<li><b>CI/CD</b>: GitHub Actions</li>
-				<li><b>Testbeds</b>: GENI, CloudLab</li>
+				<li><b>Platforms</b>: GitHub, Firebase</li>
+				<li><b>Tools</b>: Git</li>
 			</ul>
 		</section>
 
@@ -706,6 +639,40 @@
 			<h2>Talks</h2>
 
 			<div id="project-cards-wrapper">
+				<div class="project-card">
+					<div class="iframe-wrapper">
+						<iframe
+							loading="lazy"
+							width="560"
+							height="315"
+							src="https://www.youtube-nocookie.com/embed/BM62xi4FE3c"
+							title="YouTube video player: Executable and Linkable Format (ELF) Files on Linux"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen
+						></iframe>
+					</div>
+					<div class="project-info">
+						<div class="project-name">
+							Executable and Linkable Format (ELF) Files on Linux
+						</div>
+						<div class="project-links">
+							<a
+								href="https://www.youtube.com/watch?v=BM62xi4FE3c"
+								target="_blank"
+								rel="noreferrer"
+								>YouTube</a
+							>,
+							<a
+								href="https://talks.harshkapadia.me/elf"
+								target="_blank"
+								rel="noreferrer"
+								>Talk details</a
+							>
+						</div>
+					</div>
+				</div>
+
 				<div class="project-card">
 					<div class="iframe-wrapper">
 						<iframe
@@ -732,40 +699,6 @@
 							>,
 							<a
 								href="https://talks.harshkapadia.me/git_internals"
-								target="_blank"
-								rel="noreferrer"
-								>Talk details</a
-							>
-						</div>
-					</div>
-				</div>
-
-				<div class="project-card">
-					<div class="iframe-wrapper">
-						<iframe
-							loading="lazy"
-							width="560"
-							height="315"
-							src="https://www.youtube-nocookie.com/embed/HF12-91iazM"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-					</div>
-					<div class="project-info">
-						<div class="project-name">
-							Git Basics - The basics of Git and GitHub!
-						</div>
-						<div class="project-links">
-							<a
-								href="https://www.youtube.com/watch?v=HF12-91iazM"
-								target="_blank"
-								rel="noreferrer"
-								>YouTube</a
-							>,
-							<a
-								href="https://talks.harshkapadia.me/git_basics"
 								target="_blank"
 								rel="noreferrer"
 								>Talk details</a
