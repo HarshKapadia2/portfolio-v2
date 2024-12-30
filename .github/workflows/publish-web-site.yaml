@@ -8,8 +8,10 @@ on:
             - ".github/workflows/**"
             - "static/**"
             - CNAME
+            - favicon.ico
             - "*.html"
             - robots.txt
+            - site.webmanifest
     workflow_dispatch: # Allows manual execution of workflow
 
 jobs:
@@ -17,12 +19,12 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Move files to `build` directory
               run: |
                   mkdir build
-                  cp -r static CNAME *.html robots.txt build
+                  cp -r static CNAME favicon.ico *.html robots.txt site.webmanifest build
 
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@v4

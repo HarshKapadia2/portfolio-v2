@@ -6,11 +6,6 @@ const borderDisplayIndicator = document.querySelector(
 	"#header-border-indicator"
 );
 const main = document.querySelector("main");
-const mainImg = document.querySelector("#main-col-2 .icon");
-
-const DEFAULT_LANDING_IMG_PATH =
-	"static/img/harsh-kapadia-512x512-circle-landing.png";
-const HACKMIT_LANDING_IMG_PATH = "static/img/hackmit-2023-landing.png";
 
 // Header title
 const observer1 = new IntersectionObserver(displayHeaderTitle);
@@ -28,33 +23,6 @@ burgerMenu.addEventListener("click", (event) => {
 
 window.addEventListener("click", () => {
 	ul.classList.add("hide-burger-menu");
-});
-
-// For home page picture swapping
-mainImg.addEventListener(
-	"mouseover",
-	() => {
-		mainImg.src = HACKMIT_LANDING_IMG_PATH;
-	},
-	{ passive: true }
-);
-
-mainImg.addEventListener(
-	"mouseout",
-	() => {
-		mainImg.src = DEFAULT_LANDING_IMG_PATH;
-	},
-	{ passive: true }
-);
-
-mainImg.addEventListener("click", () => {
-	const imgSrc = mainImg.src;
-
-	if (imgSrc.indexOf(DEFAULT_LANDING_IMG_PATH) >= 0) {
-		mainImg.src = HACKMIT_LANDING_IMG_PATH;
-	} else {
-		mainImg.src = DEFAULT_LANDING_IMG_PATH;
-	}
 });
 
 // Utility functions

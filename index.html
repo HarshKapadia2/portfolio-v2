@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="color-scheme" content="dark" />
 
-		<title>Harsh Kapadia - Software Developer</title>
+		<title>Harsh Kapadia - Software Engineer</title>
 
-		<script defer src="static/js/script.js"></script>
+		<script defer src="/static/js/script.js"></script>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,36 +17,56 @@
 			rel="stylesheet"
 		/>
 
-		<link rel="stylesheet" href="static/css/style.css" />
+		<link rel="stylesheet" href="/static/css/style.css" />
 
+		<!-- Standard favicons -->
 		<link
-			rel="shortcut icon"
-			href="static/img/favicon.ico"
-			type="image/x-icon"
+			rel="icon"
+			type="image/png"
+			href="/static/img/icons/favicon-96x96.png"
+			sizes="96x96"
 		/>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/static/img/icons/favicon.svg"
+		/>
+		<link rel="shortcut icon" href="/static/img/icons/favicon-32x32.ico" />
+		<!-- Favicon for Apple devices -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/static/img/icons/apple-touch-icon-180x180.png"
+		/>
+		<!-- Favicons for Android (mainly for PWAs) linked in the web app manifest -->
+		<link rel="manifest" href="/site.webmanifest" />
 
+		<!-- Standard meta tags -->
 		<meta
 			name="keywords"
-			content="Harsh Kapadia, OTC, Our Tech Community"
+			content="Harsh Kapadia, AMD, OTC, Our Tech Community"
 		/>
-		<meta name="description" content="Software Developer" />
+		<meta name="description" content="Software Engineer" />
 		<meta name="author" content="Harsh Kapadia" />
+		<!-- Open Graph (Facebook, but used by others as well) meta tags -->
 		<meta property="og:site_name" content="Harsh Kapadia" />
 		<meta property="og:title" content="Harsh Kapadia" />
 		<meta property="og:type" content="website" />
-		<meta property="og:description" content="Software Developer" />
+		<meta property="og:description" content="Software Engineer" />
 		<meta property="og:url" content="https://harshkapadia.me" />
 		<meta
 			property="og:image"
 			itemprop="image"
-			content="https://harshkapadia.me/static/img/og-img.png"
+			content="https://harshkapadia.me/static/img/og-img-1200x600.png"
 		/>
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="600" />
+		<!-- Twitter-specific meta tags -->
+		<meta property="twitter:creator" content="@harshgkapadia" />
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta
 			property="twitter:image"
-			content="https://harshkapadia.me/static/img/og-img.png"
+			content="https://harshkapadia.me/static/img/og-img-1200x600.png"
 		/>
 	</head>
 
@@ -70,7 +90,6 @@
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#talks">Talks</a></li>
 					<li><a href="#otc">OTC</a></li>
-					<li><a href="#hackathons">Hackathons</a></li>
 					<li>
 						<a
 							href="https://blog.harshkapadia.me"
@@ -106,7 +125,7 @@
 			<div id="main-col-wrapper">
 				<div id="main-col-1">
 					<h1>Harsh Kapadia</h1>
-					<h2 id="main-descp">Software Developer</h2>
+					<h2 id="main-descp">Software Engineer</h2>
 
 					<div id="socials">
 						<a
@@ -126,7 +145,7 @@
 							href="https://twitter.com/harshgkapadia"
 							target="_blank"
 							rel="noreferrer"
-							title="Twitter @harshgkapadia"
+							title="Twitter/X @harshgkapadia"
 						>
 							<img
 								class="social-img"
@@ -191,20 +210,22 @@
 
 			<div>
 				<p>
-					I am Harsh Kapadia (he/him), a Software Developer. I have a
-					keen interest in Web Development, Computer Networking, Git
-					and communities.
+					I am Harsh Kapadia (he/him), a Software Engineer currently
+					based in Austin, TX, USA. I have a keen interest in the Web,
+					Git, exploring the internals of tools and technologies, and
+					communities.
 				</p>
 
 				<p>
-					I have been enjoying learning more about computers at my
+					I have been enjoying learning more about servers at my
 					current role as a Field Applications Engineer at AMD, while
 					trying to lead a more disciplined and balanced life.
 				</p>
 
 				<p>
-					I like building projects, talking about my learnings in
-					Tech, and writing about
+					I like building <a href="#projects">projects</a>,
+					<a href="#talks">talking</a> about my learnings in Tech, and
+					writing about
 					<a
 						href="https://git.harshkapadia.me"
 						target="_blank"
@@ -240,10 +261,9 @@
 				</p>
 
 				<p>
-					I started
-					<a href="#otc">Our Tech Community</a> (OTC) four years ago
-					and we regularly conduct events for all of us to learn more!
-					Apart from that, I am a
+					I started <a href="#otc">Our Tech Community (OTC)</a> over
+					four years ago and we regularly conduct events for all of us
+					to learn more! Apart from that, I am a
 					<a
 						href="https://githubcampus.expert/HarshKapadia2"
 						target="_blank"
@@ -277,7 +297,7 @@
 							href="https://resume.harshkapadia.me"
 							target="_blank"
 							rel="noreferrer"
-							>View my résumé.</a
+							>View my résumé</a
 						></b
 					>
 				</p>
@@ -295,17 +315,30 @@
 					Field Applications Engineer
 				</div>
 				<div class="experience-duration">Jan 2024 - present</div>
-				<div class="experience-location">Austin, USA (In-person)</div>
+				<div class="experience-location">
+					Austin, TX, USA (In-person)
+				</div>
 				<div class="experience-web-site">
 					<a href="https://amd.com" target="_blank" rel="noreferrer"
 						>amd.com</a
 					>
 				</div>
 				<ul class="list-style-inside">
-					<li>Primarily working with AMD EPYC server processors.</li>
 					<li>
-						Benchmarking systems and building internal tools to
-						improve the productivity of the team.
+						Building software to support debug tools for AMD EPYC
+						server processors.
+					</li>
+					<li>
+						Building a web app to provision and manage Virtual
+						Machines configured with debug software and scripts,
+						user public keys, persistent storage and VNC to reduce
+						server issue debug time, using KVM, Bash scripts,
+						Express.js and React.js.
+					</li>
+					<li>
+						Automating benchmark installation, execution and
+						evaluation through an API and scripts to improve the
+						productivity of the team.
 					</li>
 				</ul>
 			</div>
@@ -322,7 +355,9 @@
 					Field Applications Engineering Intern
 				</div>
 				<div class="experience-duration">May 2023 - Aug 2023</div>
-				<div class="experience-location">Austin, USA (In-person)</div>
+				<div class="experience-location">
+					Austin, TX, USA (In-person)
+				</div>
 				<div class="experience-web-site">
 					<a href="https://amd.com" target="_blank" rel="noreferrer"
 						>amd.com</a
@@ -330,11 +365,11 @@
 				</div>
 				<ul class="list-style-inside">
 					<li>
-						Built a web app to provision and manage Virtual Machines
-						configured with debug software and scripts, user public
-						keys, persistent storage and VNC to reduce server issue
-						debug time by 10%, using KVM, Bash scripts, Express.js
-						and React.js.
+						Built a proof-of-concept web app to provision and manage
+						Virtual Machines configured with debug software and
+						scripts, user public keys, persistent storage and VNC to
+						reduce server issue debug time by 10%, using KVM, Bash
+						scripts, Express.js and React.js.
 					</li>
 					<li>
 						Benchmarked network bandwidth (iperf3), memory bandwidth
@@ -876,154 +911,6 @@
 							>
 						</div>
 					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="hackathons">
-			<h2>Hackathons</h2>
-
-			<div class="experience">
-				<div class="experience-name">TSEC Hacks</div>
-				<div class="experience-position">Organiser</div>
-				<div class="experience-duration">2020 - 2022</div>
-				<div class="experience-location">
-					<a href="https://tsec.edu" target="_blank" rel="noreferrer"
-						>TSEC</a
-					>, Mumbai, India (In-person)
-				</div>
-				<div class="experience-web-site">
-					<a
-						href="https://tsechacks.tseccodecell.com"
-						target="_blank"
-						rel="noreferrer"
-						>tsechacks.tseccodecell.com</a
-					>
-				</div>
-				<ul class="list-style-inside">
-					<li>
-						Organised three editions of TSEC CodeCell's TSEC Hacks.
-					</li>
-					<li>
-						Generated more than ₹ 1,30,000 in monetary sponsorship
-						for TSEC Hacks 2022.
-					</li>
-					<li>
-						In-person editions (2020 and 2022): Over 200
-						participants each
-					</li>
-					<li>Online edition (2021): Over 550 participants</li>
-					<li>
-						Learnings:
-						<a
-							href="https://blog.harshkapadia.me/2022/hackathon-team-attitude"
-							target="_blank"
-							rel="noreferrer"
-							>Managing Team Attitudes While Organising
-							Hackathons</a
-						>
-					</li>
-				</ul>
-			</div>
-
-			<div class="experience">
-				<div class="experience-name">HackMIT</div>
-				<div class="experience-position">Mentor and Judge</div>
-				<div class="experience-duration">2022 & 2023</div>
-				<div class="experience-location">
-					<a href="https://mit.edu" target="_blank" rel="noreferrer"
-						>MIT</a
-					>, Boston, USA (In-person)
-				</div>
-				<div class="experience-web-site">
-					<a
-						href="https://hackmit.org"
-						target="_blank"
-						rel="noreferrer"
-						>hackmit.org</a
-					>
-				</div>
-			</div>
-
-			<div class="experience">
-				<div class="experience-name">BostonHacks 2022</div>
-				<div class="experience-position">Speaker and Mentor</div>
-				<div class="experience-duration">Nov 2022</div>
-				<div class="experience-location">
-					<a href="https://bu.edu" target="_blank" rel="noreferrer"
-						>BU</a
-					>, Boston, USA (In-person)
-				</div>
-				<div class="experience-web-site">
-					<a
-						href="https://bostonhacks.com"
-						target="_blank"
-						rel="noreferrer"
-						>bostonhacks.com</a
-					>
-				</div>
-				<ul class="list-style-inside">
-					<li>
-						Gave a talk on
-						<a
-							href="https://talks.harshkapadia.me/git_internals"
-							target="_blank"
-							rel="noreferrer"
-							>The Internals of Git</a
-						>.
-					</li>
-				</ul>
-			</div>
-
-			<div class="experience">
-				<div class="experience-name">TechTogether Boston 2022</div>
-				<div class="experience-position">Speaker, Mentor and Judge</div>
-				<div class="experience-duration">Oct 2022</div>
-				<div class="experience-location">
-					<a href="https://bu.edu" target="_blank" rel="noreferrer"
-						>BU</a
-					>, Boston, USA (In-person)
-				</div>
-				<div class="experience-web-site">
-					<a
-						href="https://www.techtogether.io/boston"
-						target="_blank"
-						rel="noreferrer"
-						>techtogether.io/boston</a
-					>
-				</div>
-				<ul class="list-style-inside">
-					<li>
-						Gave a talk on
-						<a
-							href="https://talks.harshkapadia.me/git_internals"
-							target="_blank"
-							rel="noreferrer"
-							>The Internals of Git</a
-						>.
-					</li>
-				</ul>
-			</div>
-
-			<div class="experience">
-				<div class="experience-name">HackHarvard 2023</div>
-				<div class="experience-position">Mentor</div>
-				<div class="experience-duration">Oct 2023</div>
-				<div class="experience-location">
-					<a
-						href="https://harvard.edu"
-						target="_blank"
-						rel="noreferrer"
-						>Harvard</a
-					>, Boston, USA (In-person)
-				</div>
-				<div class="experience-web-site">
-					<a
-						href="https://hackharvard.io"
-						target="_blank"
-						rel="noreferrer"
-						>hackharvard.io</a
-					>
 				</div>
 			</div>
 		</section>
