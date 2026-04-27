@@ -28,15 +28,20 @@ window.addEventListener("click", () => {
 // Utility functions
 function displayHeaderTitle(entries, observer) {
 	entries.forEach((entry) => {
-		if (entry.isIntersecting)
+		if (entry.isIntersecting) {
 			headerTitle.classList.add("hidden-visibility");
-		else headerTitle.classList.remove("hidden-visibility");
+		} else {
+			headerTitle.classList.remove("hidden-visibility");
+		}
 	});
 }
 
 function displayHeaderBorder(entries, observer) {
 	entries.forEach((entry) => {
-		if (entry.isIntersecting) header.classList.remove("header-border");
-		else header.classList.add("header-border");
+		if (entry.isIntersecting) {
+			header.classList.remove("header-border");
+		} else {
+			header.classList.add("header-border");
+		}
 	});
 }
